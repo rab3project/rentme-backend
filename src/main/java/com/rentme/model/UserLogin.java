@@ -7,6 +7,7 @@ import java.util.Date;
 @Table(name="user_login")
 public class UserLogin {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
