@@ -7,6 +7,7 @@ import java.util.Date;
 @Table(name ="user")
 public class User {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
@@ -24,21 +25,16 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @Column(name="created_at")
+    @Column(name = "created_at")
     private Date createdAt;
 
-    @Column(name="active")
+    @Column(name = "active")
     private Long active;
 
-    @Column(name = "username")
-    private String username;
 
-    @Column(name = "password")
-    private String password;
-
-
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user", nullable = false)
+    @OneToOne(fetch = FetchType.LAZY,
+            cascade =  CascadeType.ALL,
+            mappedBy = "user")
     private UserLogin userLogin;
 
 
@@ -101,19 +97,13 @@ public class User {
         this.active = active;
     }
 
-    public String getUsername() {
-        return username;
+    public UserLogin getUserLogin() {
+        return userLogin;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserLogin(UserLogin userLogin) {
+        this.userLogin = userLogin;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

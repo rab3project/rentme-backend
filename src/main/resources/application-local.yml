@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://rentme.cbxai9cjf1gl.us-east-1.rds.amazonaws.com/rentme
-    username: admin
-    password: adminadmin
+    url: jdbc:mysql://localhost:3306/rentme
+    username: root
+    password: password
   jpa:
     properties:
       hibernate:

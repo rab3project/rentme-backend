@@ -22,16 +22,12 @@ public class UserLogin {
     private Date lastSignOn;
 
 
-    @Column(name = "user_id")
-    private Long userId;
-
     @Column(name = "created_at")
     private Date ceatedAt;
 
 
-    @OneToOne(fetch = FetchType.LAZY,
-            cascade =  CascadeType.ALL,
-            mappedBy = "userLogin")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
 
@@ -70,13 +66,6 @@ public class UserLogin {
         this.lastSignOn = lastSignOn;
     }
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
 
     public Date getCeatedAt() {
         return ceatedAt;
@@ -84,5 +73,13 @@ public class UserLogin {
 
     public void setCeatedAt(Date ceatedAt) {
         this.ceatedAt = ceatedAt;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

@@ -1,0 +1,4 @@
+
+
+1. alter table USer
+       drop column username, password.
