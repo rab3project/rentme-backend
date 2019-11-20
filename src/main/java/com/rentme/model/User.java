@@ -29,16 +29,10 @@ public class User {
 
     @Column(name="active")
     private Long active;
-
-    @Column(name = "username")
-    private String username;
-
-    @Column(name = "password")
-    private String password;
-
+   
 
     @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "user", nullable = false)
+    @JoinColumn(name = "id", nullable = false)
     private UserLogin userLogin;
 
 
@@ -101,19 +95,4 @@ public class User {
         this.active = active;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-}
+   }
