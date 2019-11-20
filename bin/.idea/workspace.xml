@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="cf0bb14d-6ebd-49d7-b43c-64c3be783eeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rentme/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rentme/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rentme/model/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rentme/model/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.local.yml" beforeDir="false" />
-=======
     <list default="true" id="ee85c0cb-5a1b-45fb-8a9d-f1f8138dc9b7" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/rentme/controller/ProductController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/rentme/model/Product.java" afterDir="false" />
@@ -81,7 +72,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RentMeApp.iml" beforeDir="false" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -96,32 +86,8 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/model/UserLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-=======
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -131,45 +97,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="58">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/repository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/controller/CustomerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/main/Application.java">
-=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/controller/ProductController.java">
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -181,12 +114,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="13" selection-end-column="57" />
-=======
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/repository/ProductRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -194,7 +121,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
             </state>
           </provider>
         </entry>
@@ -207,21 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/java/com/rentme/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.local.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rentme/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rentme/model/UserLogin.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="812" />
-=======
         <option value="$PROJECT_DIR$/src/main/java/com/rentme/model/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rentme/repository/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rentme/controller/ProductController.java" />
@@ -233,7 +144,6 @@
     <option name="y" value="37" />
     <option name="width" value="953" />
     <option name="height" value="806" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -280,9 +190,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rentme" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -293,7 +200,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rentme" type="462c0819:PsiDirectoryNode" />
               <item name="dtos" type="462c0819:PsiDirectoryNode" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
             </path>
             <path>
               <item name="RentMeApp" type="b2602c69:ProjectViewProjectNode" />
@@ -302,46 +208,30 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rentme" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="main" type="462c0819:PsiDirectoryNode" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
             </path>
             <path>
               <item name="RentMeApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="rentme-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rentme" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
             </path>
             <path>
               <item name="RentMeApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="rentme-backend" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rentme" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="CatdeaLogs" />
-=======
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -382,24 +272,6 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="DB Browser" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Project Explorer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Job Explorer" order="9" />
-      <window_info id="Learn" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16506024" />
-=======
     <frame x="348" y="37" width="953" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -421,66 +293,21 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Console" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/main/Application.java">
-=======
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -492,7 +319,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/repository/ProductRepository.java">
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -504,23 +330,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state>
-          <caret selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rentme/model/UserLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-=======
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
         </state>
       </provider>
     </entry>

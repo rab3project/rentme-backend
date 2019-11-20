@@ -30,11 +30,18 @@ public class User {
 
     @Column(name = "active")
     private Long active;
+<<<<<<< HEAD
 
 
     @OneToOne(fetch = FetchType.LAZY,
             cascade =  CascadeType.ALL,
             mappedBy = "user")
+=======
+   
+
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id", nullable = false)
+>>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
     private UserLogin userLogin;
 
 
@@ -97,6 +104,7 @@ public class User {
         this.active = active;
     }
 
+<<<<<<< HEAD
     public UserLogin getUserLogin() {
         return userLogin;
     }
@@ -107,3 +115,6 @@ public class User {
 
 
 }
+=======
+   }
+>>>>>>> cdc6ec5fa93d3de5f16cc31978b6a70c21cb4c8f
