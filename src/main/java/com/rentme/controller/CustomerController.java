@@ -14,7 +14,7 @@ import com.rentme.dtos.CustomerSignupDto;
 @RequestMapping("/customer")
 public class CustomerController {
 
-	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public void signup(@RequestBody CustomerSignupDto signupDto) {
 		
 	}
