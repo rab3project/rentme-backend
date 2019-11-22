@@ -3,6 +3,7 @@ package com.rentme.services;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.rentme.dtos.UserSignupDto;
 import com.rentme.entities.UserLoginEntity;
@@ -10,7 +11,7 @@ import com.rentme.entities.UserSignupEntity;
 import com.rentme.repository.UserLoginRepository;
 
 
-
+@Service
 public class UserSignupService {
 
 	
