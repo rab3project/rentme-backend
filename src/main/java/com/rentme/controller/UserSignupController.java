@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rentme.dtos.CustomerSignupDto;
+import com.rentme.dtos.UserSignupDto;
 
 @RestController
 @RequestMapping("/customer")
-public class CustomerController {
+public class UserSignupController {
 
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
-	public void signup(@RequestBody CustomerSignupDto signupDto) {
+	public void signup(@RequestBody UserSignupDto signupDto) {
 		
 	}
 }

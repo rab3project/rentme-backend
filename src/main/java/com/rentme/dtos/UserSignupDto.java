@@ -1,12 +1,12 @@
 package com.rentme.dtos;
 
-public class CustomerSignupDto {
+public class UserSignupDto {
 
 	private String name;
 	private String email;
 	private String phone;
 	private CustomerAddressDto customerAddressDto;
-	private LoginDto loginDto;
+	private UserLoginDto loginDto;
 
 	public String getName() {
 		return name;
@@ -40,11 +40,11 @@ public class CustomerSignupDto {
 		this.customerAddressDto = customerAddressDto;
 	}
 
-	public LoginDto getLoginDto() {
+	public UserLoginDto getLoginDto() {
 		return loginDto;
 	}
 
-	public void setLoginDto(LoginDto loginDto) {
+	public void setLoginDto(UserLoginDto loginDto) {
 		this.loginDto = loginDto;
 	}
 

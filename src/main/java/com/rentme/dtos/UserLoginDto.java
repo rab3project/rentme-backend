@@ -1,6 +1,6 @@
 package com.rentme.dtos;
 
-public class LoginDto {
+public class UserLoginDto {
 	private String username;
 	private String password;
 
