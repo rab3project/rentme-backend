@@ -5,7 +5,7 @@ import java.util.Date;
 
 @Entity
 @Table(name ="user")
-public class UserEntity {
+public class UserSignupEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -37,7 +37,7 @@ public class UserEntity {
     private UserLoginEntity userLogin;
 
 
-    public UserEntity() {
+    public UserSignupEntity() {
     }
 
     public Long getId() {

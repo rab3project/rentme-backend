@@ -5,11 +5,22 @@ public class UserSignupDto {
 	private String name;
 	private String email;
 	private String phone;
+	private String username;
+	private String password;
+	private String address;
 	private CustomerAddressDto customerAddressDto;
 	private UserLoginDto loginDto;
 
 	public String getName() {
 		return name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public void setName(String name) {
@@ -48,4 +59,21 @@ public class UserSignupDto {
 		this.loginDto = loginDto;
 	}
 
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	
 }

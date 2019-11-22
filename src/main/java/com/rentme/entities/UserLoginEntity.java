@@ -23,12 +23,12 @@ public class UserLoginEntity {
 
 
     @Column(name = "created_at")
-    private Date ceatedAt;
+    private Date createdAt;
 
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", nullable = false)
-    private UserEntity user;
+    private UserSignupEntity user;
 
 
     public UserLoginEntity() {
@@ -67,19 +67,19 @@ public class UserLoginEntity {
     }
 
 
-    public Date getCeatedAt() {
-        return ceatedAt;
+    public Date getCreatedAt() {
+        return createdAt;
     }
 
     public void setCeatedAt(Date ceatedAt) {
-        this.ceatedAt = ceatedAt;
+        this.createdAt = ceatedAt;
     }
 
-    public UserEntity getUser() {
+    public UserSignupEntity getUser() {
         return user;
     }
 
-    public void setUser(UserEntity user) {
+    public void setUser(UserSignupEntity user) {
         this.user = user;
     }
 }

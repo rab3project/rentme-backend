@@ -1,5 +1,9 @@
 package com.rentme.repository;
 
-public class UserLoginRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.rentme.entities.UserLoginEntity;
+
+public interface UserLoginRepository extends CrudRepository<UserLoginEntity, Long> {
 
 }
