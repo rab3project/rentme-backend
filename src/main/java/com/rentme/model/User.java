@@ -7,7 +7,6 @@ import java.util.Date;
 @Table(name ="user")
 public class User {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
@@ -19,8 +18,8 @@ public class User {
     @Column(name = "phone")
     private String phone;
 
-    @Column(name = "country_code")
-    private String countryCode;
+    @Column(name = "address")
+    private String address;
 
     @Column(name = "email")
     private String email;
@@ -65,12 +64,12 @@ public class User {
         this.phone = phone;
     }
 
-    public String getCountryCode() {
-        return countryCode;
+    public String getAddress() {
+        return address;
     }
 
-    public void setCountryCode(String countryCode) {
-        this.countryCode = countryCode;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getEmail() {
