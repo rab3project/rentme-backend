@@ -1,4 +1,4 @@
-package com.rentme.model;
+package com.rentme.entities;
 
 import javax.persistence.*;
 import java.util.Date;

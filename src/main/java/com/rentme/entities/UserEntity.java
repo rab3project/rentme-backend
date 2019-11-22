@@ -1,11 +1,11 @@
-package com.rentme.model;
+package com.rentme.entities;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name ="user")
-public class User {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -34,10 +34,10 @@ public class User {
     @OneToOne(fetch = FetchType.LAZY,
             cascade =  CascadeType.ALL,
             mappedBy = "user")
-    private UserLogin userLogin;
+    private UserLoginEntity userLogin;
 
 
-    public User() {
+    public UserEntity() {
     }
 
     public Long getId() {
@@ -96,11 +96,11 @@ public class User {
         this.active = active;
     }
 
-    public UserLogin getUserLogin() {
+    public UserLoginEntity getUserLogin() {
         return userLogin;
     }
 
-    public void setUserLogin(UserLogin userLogin) {
+    public void setUserLogin(UserLoginEntity userLogin) {
         this.userLogin = userLogin;
     }
 

@@ -1,6 +1,6 @@
 package com.rentme.controller;
 
-import com.rentme.model.Product;
+import com.rentme.entities.Product;
 import com.rentme.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
