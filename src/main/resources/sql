@@ -1,4 +1,13 @@
 
-
-1. alter table USer
-       drop column username, password.
+Create Table Products(
+id int (40) not null auto_increment,
+name varchar (50) not null,
+uploadDate date,
+rentedIndicator boolean not null,
+usedCound int (50),
+img varchar (200),
+uploadedByuserid bigint (40) not null,
+pricePerDay double not null,
+primary key (id),
+foreign key (uploadedByuserid) references user(id)
+);

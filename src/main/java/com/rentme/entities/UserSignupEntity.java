@@ -37,6 +37,11 @@ public class UserSignupEntity {
     private UserLoginEntity userLogin;
 
 
+    @OneToOne(fetch = FetchType.LAZY,
+            cascade =  CascadeType.ALL,
+            mappedBy = "userSignup")
+    private Product product;
+    
     public UserSignupEntity() {
     }
 
@@ -103,6 +108,21 @@ public class UserSignupEntity {
     public void setUserLogin(UserLoginEntity userLogin) {
         this.userLogin = userLogin;
     }
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	@Override
+	public String toString() {
+		return "UserSignupEntity [id=" + id + ", name=" + name + ", phone=" + phone + ", address=" + address
+				+ ", email=" + email + ", createdAt=" + createdAt + ", active=" + active + ", userLogin=" + userLogin
+				+ ", product=" + product + "]";
+	}
 
 }
 

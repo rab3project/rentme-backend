@@ -9,67 +9,112 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "productId")
-    private long ProductId;
+    @Column(name = "id")
+    private long id;
 
     @Column(name= "name")
-    private String Name;
+    private String name;
 
     @Column(name = "description")
-    private String Description;
+    private String description;
+    
+    @Column(name = "uploadDate")
+    private Date uploadDate;
 
-    private Date date;
+    @Column(name= "rentedIndicator")
+    private Boolean rentedIndicator;
+    
+    @Column(name= "rentCount")
+    private int rentCount;
+    
+    @Column(name= "imageHttp")
+    private String imageHttp;
+    
+    @Column(name= "pricePerDay")
+    private String pricePerDay;
+    
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "uploadedByuserid", nullable = false)
+    private UserSignupEntity userSignup;
 
-    private double PricePerDay;
+	public long getId() {
+		return id;
+	}
 
-    public Product() {
-    }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-    public long getProductId() {
+	public String getName() {
+		return name;
+	}
 
-        return ProductId;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setProductId(long productId) {
+	public String getDescription() {
+		return description;
+	}
 
-        ProductId = productId;
-    }
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-    public String getName() {
+	public Date getUploadDate() {
+		return uploadDate;
+	}
 
-        return Name;
-    }
+	public void setUploadDate(Date uploadDate) {
+		this.uploadDate = uploadDate;
+	}
 
-    public void setName(String name) {
+	public Boolean getRentedIndicator() {
+		return rentedIndicator;
+	}
 
-        Name = name;
-    }
+	public void setRentedIndicator(Boolean rentedIndicator) {
+		this.rentedIndicator = rentedIndicator;
+	}
 
-    public String getDescription() {
+	public int getRentCount() {
+		return rentCount;
+	}
 
-        return Description;
-    }
+	public void setRentCount(int rentCount) {
+		this.rentCount = rentCount;
+	}
 
-    public Date getDate() {
-        return date;
-    }
+	public String getImageHttp() {
+		return imageHttp;
+	}
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+	public void setImageHttp(String imageHttp) {
+		this.imageHttp = imageHttp;
+	}
 
-    public void setDescription(String description) {
+	public String getPricePerDay() {
+		return pricePerDay;
+	}
 
-        Description = description;
-    }
+	public void setPricePerDay(String pricePerDay) {
+		this.pricePerDay = pricePerDay;
+	}
 
-    public double getPricePerDay() {
+	public UserSignupEntity getUserSignup() {
+		return userSignup;
+	}
 
-        return PricePerDay;
-    }
+	public void setUserSignup(UserSignupEntity userSignup) {
+		this.userSignup = userSignup;
+	}
 
-    public void setPricePerDay(double pricePerDay) {
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", uploadDate=" + uploadDate
+				+ ", rentedIndicator=" + rentedIndicator + ", rentCount=" + rentCount + ", imageHttp=" + imageHttp
+				+ ", pricePerDay=" + pricePerDay + ", userSignup=" + userSignup + "]";
+	}
 
-        PricePerDay = pricePerDay;
-    }
+    
 }

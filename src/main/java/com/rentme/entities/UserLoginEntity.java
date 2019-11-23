@@ -82,4 +82,12 @@ public class UserLoginEntity {
     public void setUser(UserSignupEntity user) {
         this.user = user;
     }
+
+	@Override
+	public String toString() {
+		return "UserLoginEntity [id=" + id + ", username=" + username + ", password=" + password + ", lastSignOn="
+				+ lastSignOn + ", createdAt=" + createdAt + ", user=" + user + "]";
+	}
+
+
 }
