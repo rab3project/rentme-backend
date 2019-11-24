@@ -1,23 +1,58 @@
-package com.rentme.dtos;
+package com.rentme.entities;
 
+import javax.persistence.*;
 import java.util.Date;
+import java.util.Optional;
 
+@Entity
+@Table(name = "products")
+public class ProductEntity {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
+	private long id;
 
-public class ProductDto {
+	@Column(name = "name")
 	private String name;
 
+	@Column(name = "description")
 	private String description;
 
+	@Column(name = "uploadDate")
 	private Date uploadDate;
 
+	@Column(name = "rentedIndicator")
 	private Boolean rentedIndicator;
 
+	@Column(name = "rentCount")
 	private int rentCount;
 
+	@Column(name = "imageHttp")
 	private String imageHttp;
 
+	@Column(name = "pricePerDay")
 	private String pricePerDay;
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "uploadedByuserid", nullable = false)
+	private Optional<UserLoginEntity> userLogin;
+
+	public Optional<UserLoginEntity> getUserLogin() {
+		return userLogin;
+	}
+
+	public void setUserLogin(Optional<UserLoginEntity> uEntity) {
+		this.userLogin = uEntity;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -75,5 +110,12 @@ public class ProductDto {
 		this.pricePerDay = pricePerDay;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "ProductEntity [id=" + id + ", name=" + name + ", description=" + description + ", uploadDate="
+				+ uploadDate + ", rentedIndicator=" + rentedIndicator + ", rentCount=" + rentCount + ", imageHttp="
+				+ imageHttp + ", pricePerDay=" + pricePerDay + ", userLogin=" + userLogin + "]";
+	}
+
+
 }

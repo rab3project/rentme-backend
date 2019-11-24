@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.rentme.dtos.UserSignupDto;
 import com.rentme.entities.UserLoginEntity;
 import com.rentme.entities.UserSignupEntity;
-import com.rentme.repository.UserLoginRepository;
+import com.rentme.repositories.UserLoginRepository;
 
 
 @Service

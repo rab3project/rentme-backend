@@ -4,90 +4,96 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="user_login")
+@Table(name = "user_login")
 public class UserLoginEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
+	private Long id;
 
-    @Column(name = "username")
-    private String username;
+	@Column(name = "username")
+	private String username;
 
-    @Column(name = "password")
-    private String password;
+	@Column(name = "password")
+	private String password;
 
-    @Column(name = "last_signed_on")
-    private Date lastSignOn;
+	@Column(name = "last_signed_on")
+	private Date lastSignOn;
 
+	@Column(name = "created_at")
+	private Date createdAt;
 
-    @Column(name = "created_at")
-    private Date createdAt;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "user_id", nullable = false)
+	private UserSignupEntity user;
 
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "userLogin")
+	private ProductEntity product;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id", nullable = false)
-    private UserSignupEntity user;
+	public ProductEntity getProduct() {
+		return product;
+	}
 
+	public void setProduct(ProductEntity product) {
+		this.product = product;
+	}
 
-    public UserLoginEntity() {
-    }
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
 
-    public Long getId() {
-        return id;
-    }
+	public UserLoginEntity() {
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public Date getLastSignOn() {
-        return lastSignOn;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public void setLastSignOn(Date lastSignOn) {
-        this.lastSignOn = lastSignOn;
-    }
+	public Date getLastSignOn() {
+		return lastSignOn;
+	}
 
+	public void setLastSignOn(Date lastSignOn) {
+		this.lastSignOn = lastSignOn;
+	}
 
-    public Date getCreatedAt() {
-        return createdAt;
-    }
+	public Date getCreatedAt() {
+		return createdAt;
+	}
 
-    public void setCeatedAt(Date ceatedAt) {
-        this.createdAt = ceatedAt;
-    }
+	public UserSignupEntity getUser() {
+		return user;
+	}
 
-    public UserSignupEntity getUser() {
-        return user;
-    }
-
-    public void setUser(UserSignupEntity user) {
-        this.user = user;
-    }
+	public void setUser(UserSignupEntity user) {
+		this.user = user;
+	}
 
 	@Override
 	public String toString() {
 		return "UserLoginEntity [id=" + id + ", username=" + username + ", password=" + password + ", lastSignOn="
 				+ lastSignOn + ", createdAt=" + createdAt + ", user=" + user + "]";
 	}
-
 
 }
