@@ -2,6 +2,7 @@ package com.rentme.entities;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Optional;
 
 @Entity
 @Table(name = "user_login")

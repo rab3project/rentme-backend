@@ -23,6 +23,8 @@ public class ProductService {
 
 	public void addProducts(Long id, ProductDto pdto) {
 		Optional<UserLoginEntity> uEntity = uRepo.findById(id);
+		
+		
 
 		ProductEntity pEntity = new ProductEntity();
 		pEntity.setName(pdto.getName());
@@ -32,7 +34,16 @@ public class ProductService {
 		pEntity.setRentCount(pdto.getRentCount());
 		pEntity.setRentedIndicator(false);
 		pEntity.setUploadDate(new Date());
-		pEntity.setUserLogin(uEntity);
+		
+		
+		if (uEntity.isPresent()){
+		    UserLoginEntity newUEntity = uEntity.get();
+		    pEntity.setUserLogin(newUEntity);
+		}
+		else{
+		   // alternative processing....
+		}
+		
 
 		pRepository.save(pEntity);
 	}

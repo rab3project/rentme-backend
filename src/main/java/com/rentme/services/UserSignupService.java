@@ -24,7 +24,7 @@ public class UserSignupService {
 		UserLoginEntity lentity = new UserLoginEntity();
 		lentity.setUsername(sDto.getUsername());
 		lentity.setPassword(sDto.getPassword());
-		lentity.setCeatedAt(new Date());
+		lentity.setCreatedAt(new Date());
 		lentity.setLastSignOn(new Date());
 			
 			

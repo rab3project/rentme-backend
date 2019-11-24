@@ -36,13 +36,13 @@ public class ProductEntity {
 
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "uploadedByuserid", nullable = false)
-	private Optional<UserLoginEntity> userLogin;
+	private UserLoginEntity userLogin;
 
-	public Optional<UserLoginEntity> getUserLogin() {
+	public UserLoginEntity getUserLogin() {
 		return userLogin;
 	}
 
-	public void setUserLogin(Optional<UserLoginEntity> uEntity) {
+	public void setUserLogin(UserLoginEntity uEntity) {
 		this.userLogin = uEntity;
 	}
 
