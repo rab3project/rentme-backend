@@ -32,7 +32,7 @@ public class ProductEntity {
 	private String imageHttp;
 
 	@Column(name = "pricePerDay")
-	private String pricePerDay;
+	private Double pricePerDay;
 
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "uploadedByuserid", nullable = false)
@@ -102,11 +102,11 @@ public class ProductEntity {
 		this.imageHttp = imageHttp;
 	}
 
-	public String getPricePerDay() {
+	public Double getPricePerDay() {
 		return pricePerDay;
 	}
 
-	public void setPricePerDay(String pricePerDay) {
+	public void setPricePerDay(Double pricePerDay) {
 		this.pricePerDay = pricePerDay;
 	}
 

@@ -17,7 +17,7 @@ public class ProductDto {
 
 	private String imageHttp;
 
-	private String pricePerDay;
+	private Double pricePerDay;
 
 	public String getName() {
 		return name;
@@ -67,13 +67,24 @@ public class ProductDto {
 		this.imageHttp = imageHttp;
 	}
 
-	public String getPricePerDay() {
+	public Double getPricePerDay() {
 		return pricePerDay;
 	}
 
-	public void setPricePerDay(String pricePerDay) {
+	public void setPricePerDay(Double pricePerDay) {
 		this.pricePerDay = pricePerDay;
 	}
 
+	
+	public void setAll(String name, String description, String imageHttp, int rentCount, Double pricePerDay ) {
+		setName(name);
+		setDescription(description);
+		setImageHttp(imageHttp);
+		setPricePerDay(pricePerDay);
+		setRentCount(rentCount);		
+	}
+	
+	
+	
 	
 }
