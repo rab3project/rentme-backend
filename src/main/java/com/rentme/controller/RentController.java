@@ -2,12 +2,14 @@ package com.rentme.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rentme.dtos.ProductDto;
+import com.rentme.dtos.RentDto;
 import com.rentme.services.RentService;
 
 
@@ -27,8 +29,8 @@ public class RentController {
 
 	@RequestMapping(value = "/rent", method = RequestMethod.POST)
 	public void createProduct(@RequestParam(value = "loginid") Long loginId, 
-							  @RequestParam(value = "pid") Long pId) {
-		RentService.rentProduct(loginId,pId);
+							  @RequestParam(value = "pid") Long pId, @RequestBody RentDto rdto) {
+		RentService.rentProduct(loginId,pId, rdto);
 
 	}
 
