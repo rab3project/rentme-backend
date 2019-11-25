@@ -54,11 +54,9 @@ public class RentService {
 		Optional<UserLoginEntity> uEntity = uRepo.findById(logId);
 		Optional<UserLoginEntity> pEntity = uRepo.findById(pId);
 		
-		
 		rEntity.setRentFromDate(rentDto.getRentFromDate());
 		rEntity.setRentToDate(rentDto.getRentToDate());
 		rEntity.setTotalPrice(rentDto.getTotalPrice());
-		
 		
 		if (uEntity.isPresent()){
 		    UserLoginEntity newUEntity = uEntity.get();
@@ -67,8 +65,7 @@ public class RentService {
 		else{
 		   // alternative processing....
 		}
-		
-		
+				
 
 		if (pEntity.isPresent()){
 		    UserLoginEntity newPEntity = pEntity.get();
@@ -80,10 +77,7 @@ public class RentService {
 		
 		rRepository.save(rEntity);
 		
-		
-		
-		
-		
+				
 		
 		
 	}
