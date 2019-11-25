@@ -28,11 +28,8 @@ public class RentEntity {
 	private Date  rentToDate;
 
 	@Column(name = "totalPrice")
-	private Date lastSignOn;
+	private Double totalPrice;
 
-	@Column(name = "created_at")
-	private Date createdAt;
-	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "rentedByUserLId", nullable = false)
 	private UserLoginEntity userLoginEntity;
@@ -65,20 +62,13 @@ public class RentEntity {
 		this.rentToDate = rentToDate;
 	}
 
-	public Date getLastSignOn() {
-		return lastSignOn;
+
+	public Double getTotalPrice() {
+		return totalPrice;
 	}
 
-	public void setLastSignOn(Date lastSignOn) {
-		this.lastSignOn = lastSignOn;
-	}
-
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
+	public void setTotalPrice(Double totalPrice) {
+		this.totalPrice = totalPrice;
 	}
 
 	public UserLoginEntity getUserLoginEntity() {
@@ -100,10 +90,10 @@ public class RentEntity {
 	@Override
 	public String toString() {
 		return "RentEntity [id=" + id + ", rentFromDate=" + rentFromDate + ", rentToDate=" + rentToDate
-				+ ", lastSignOn=" + lastSignOn + ", createdAt=" + createdAt + ", userLoginEntity=" + userLoginEntity
-				+ ", pEntity=" + pEntity + "]";
+				+ ", totalPrice=" + totalPrice + ", userLoginEntity=" + userLoginEntity + ", pEntity=" + pEntity + "]";
 	}
-	
+
+
 	
 	
 }

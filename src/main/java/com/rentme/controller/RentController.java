@@ -30,7 +30,9 @@ public class RentController {
 	@RequestMapping(value = "/rent", method = RequestMethod.POST)
 	public void createProduct(@RequestParam(value = "loginid") Long loginId, 
 							  @RequestParam(value = "pid") Long pId, @RequestBody RentDto rdto) {
-		RentService.rentProduct(loginId,pId, rdto);
+		rService.rentProduct(loginId, pId, rdto);
+		
+		
 
 	}
 
