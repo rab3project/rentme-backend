@@ -38,6 +38,9 @@ public class ProductEntity {
 	@JoinColumn(name = "uploadedByuserid", nullable = false)
 	private UserLoginEntity userLogin;
 
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "pEntity")
+	private RentEntity rEntity;
+
 	public UserLoginEntity getUserLogin() {
 		return userLogin;
 	}
@@ -110,12 +113,22 @@ public class ProductEntity {
 		this.pricePerDay = pricePerDay;
 	}
 
+	public RentEntity getrEntity() {
+		return rEntity;
+	}
+
+	public void setrEntity(RentEntity rEntity) {
+		this.rEntity = rEntity;
+	}
+
 	@Override
 	public String toString() {
 		return "ProductEntity [id=" + id + ", name=" + name + ", description=" + description + ", uploadDate="
 				+ uploadDate + ", rentedIndicator=" + rentedIndicator + ", rentCount=" + rentCount + ", imageHttp="
-				+ imageHttp + ", pricePerDay=" + pricePerDay + ", userLogin=" + userLogin + "]";
+				+ imageHttp + ", pricePerDay=" + pricePerDay + ", userLogin=" + userLogin + ", rEntity=" + rEntity
+				+ "]";
 	}
 
+	
 
 }

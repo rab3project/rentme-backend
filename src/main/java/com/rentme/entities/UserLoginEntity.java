@@ -31,6 +31,9 @@ public class UserLoginEntity {
 
 	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "userLogin")
 	private ProductEntity product;
+	
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "userLoginEntity")
+	private RentEntity rEntity;
 
 	public ProductEntity getProduct() {
 		return product;
@@ -91,10 +94,20 @@ public class UserLoginEntity {
 		this.user = user;
 	}
 
+	public RentEntity getrEntity() {
+		return rEntity;
+	}
+
+	public void setrEntity(RentEntity rEntity) {
+		this.rEntity = rEntity;
+	}
+
 	@Override
 	public String toString() {
 		return "UserLoginEntity [id=" + id + ", username=" + username + ", password=" + password + ", lastSignOn="
-				+ lastSignOn + ", createdAt=" + createdAt + ", user=" + user + "]";
+				+ lastSignOn + ", createdAt=" + createdAt + ", user=" + user + ", product=" + product + ", rEntity="
+				+ rEntity + "]";
 	}
 
+	
 }
