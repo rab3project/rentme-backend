@@ -27,7 +27,7 @@ public class UserLoginEntity {
 
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "user_id", nullable = false)
-	private UserSignupEntity user;
+	private UserEntity user;
 
 	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "userLogin")
 	private ProductEntity product;
@@ -86,11 +86,11 @@ public class UserLoginEntity {
 		return createdAt;
 	}
 
-	public UserSignupEntity getUser() {
+	public UserEntity getUser() {
 		return user;
 	}
 
-	public void setUser(UserSignupEntity user) {
+	public void setUser(UserEntity user) {
 		this.user = user;
 	}
 

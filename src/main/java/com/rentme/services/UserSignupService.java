@@ -5,9 +5,10 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.rentme.dtos.CustomerSignupDto;
 import com.rentme.dtos.UserSignupDto;
 import com.rentme.entities.UserLoginEntity;
-import com.rentme.entities.UserSignupEntity;
+import com.rentme.entities.UserEntity;
 import com.rentme.repositories.UserLoginRepository;
 
 
@@ -18,23 +19,22 @@ public class UserSignupService {
 	@Autowired 
 	private UserLoginRepository uLRepository; 
 	
-	public void createUser(UserSignupDto sDto) {
-		// TODO Auto-generated method stub
+	public void createUser(CustomerSignupDto customerSignupDto) {
 		
 		UserLoginEntity lentity = new UserLoginEntity();
-		lentity.setUsername(sDto.getUsername());
-		lentity.setPassword(sDto.getPassword());
+		lentity.setUsername(customerSignupDto.getLoginDto().getUsername());
+		lentity.setPassword(customerSignupDto.getLoginDto().getPassword());
 		lentity.setCreatedAt(new Date());
-		lentity.setLastSignOn(new Date());
+		//lentity.setLastSignOn(new Date());
 			
 			
-		UserSignupEntity sEntity = new UserSignupEntity();
-		sEntity.setName(sDto.getName());
-	    sEntity.setEmail(sDto.getEmail());
+		UserEntity sEntity = new UserEntity();
+		sEntity.setName(customerSignupDto.getName());
+	    sEntity.setEmail(customerSignupDto.getEmail());
 		//sEntity.setConfirmEmail(sDto.getConfirmEmail());
 		//sEntity.setDob(sDto.getDob());
-		sEntity.setPhone(sDto.getPhone());
-		sEntity.setAddress(sDto.getAddress());
+		sEntity.setPhone(customerSignupDto.getPhone());
+		//sEntity.setAddress(customerSignupDto.getAddress());
 		sEntity.setCreatedAt(new Date());
 		sEntity.setActive(1L);
 		

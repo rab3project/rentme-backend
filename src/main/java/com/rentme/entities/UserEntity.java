@@ -5,7 +5,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "user")
-public class UserSignupEntity {
+public class UserEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,7 +33,7 @@ public class UserSignupEntity {
 	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
 	private UserLoginEntity userLogin;
 
-	public UserSignupEntity() {
+	public UserEntity() {
 	}
 
 	public Long getId() {

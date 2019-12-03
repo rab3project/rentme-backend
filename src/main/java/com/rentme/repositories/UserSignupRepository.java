@@ -5,9 +5,9 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.rentme.entities.UserSignupEntity;
+import com.rentme.entities.UserEntity;
 
 @Transactional
 @Repository
-public interface UserSignupRepository extends CrudRepository<UserSignupEntity, Long> {
+public interface UserSignupRepository extends CrudRepository<UserEntity, Long> {
 }
