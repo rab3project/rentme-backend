@@ -1,4 +1,0 @@
-I am writing this file from github.
-How are you in locla machine?
-
-I am replying from local. Everything is great over here.
